@@ -1,0 +1,1548 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI ROBOT - روبوت التداول الذكي الاحترافي على الذهب</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for High-Tech Arabic and English look -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&family=Orbitron:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #08090c;
+            color: #e2e8f0;
+        }
+        .tech-font {
+            font-family: 'Orbitron', sans-serif;
+        }
+        /* Gradient glows for premium look */
+        .glow-blue {
+            filter: drop-shadow(0 0 15px rgba(59, 130, 246, 0.4));
+        }
+        .glow-emerald {
+            filter: drop-shadow(0 0 15px rgba(16, 185, 129, 0.4));
+        }
+        /* Custom Orange Desk Background like in the video */
+        .orange-desk {
+            background: radial-gradient(circle at center, #e05a16 0%, #a03303 100%);
+            box-shadow: inset 0 0 80px rgba(0,0,0,0.6);
+        }
+        /* Box lid opening animation */
+        .box-lid-open {
+            transform: translateY(-110%) rotateX(105deg);
+            opacity: 0;
+            pointer-events: none;
+            transition: all 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .tray-unveil {
+            transform: scale(1.03);
+            transition: all 0.8s ease-out;
+        }
+        /* Breathing glow effect for active robot */
+        @keyframes neonGlow {
+            0%, 100% { filter: drop-shadow(0 0 4px #3b82f6) drop-shadow(0 0 10px #3b82f6); }
+            50% { filter: drop-shadow(0 0 8px #60a5fa) drop-shadow(0 0 20px #3b82f6); }
+        }
+        .active-glow {
+            animation: neonGlow 2s infinite ease-in-out;
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <!-- Navbar / شريط التنقل العلوي -->
+    <nav class="sticky top-0 z-50 bg-[#08090c]/90 border-b border-slate-900 backdrop-blur-md px-4 py-3">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-blue-600 flex items-center justify-center shadow-lg shadow-blue-500/30">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path></svg>
+                </div>
+                <div>
+                    <h1 class="text-lg font-black tracking-wide text-white leading-tight">روبوت الذهب بالذكاء الاصطناعي</h1>
+                    <p class="text-[10px] text-blue-500 tech-font font-bold">AI GOLD ROBOT TRADING</p>
+                </div>
+            </div>
+            <!-- Navigation Links -->
+            <div class="hidden md:flex items-center gap-6 text-xs font-bold text-slate-300">
+                <a href="#hero" class="hover:text-blue-500 transition">الرئيسية</a>
+                <a href="#order" class="hover:text-emerald-400 transition bg-emerald-950/40 text-emerald-400 px-3 py-1.5 rounded-full border border-emerald-800/30">اطلب الآن ⚡</a>
+                <a href="#unboxing" class="hover:text-blue-500 transition">تجربة الفتح 📦</a>
+                <a href="#features" class="hover:text-blue-500 transition">المميزات</a>
+                <a href="#performance" class="hover:text-blue-500 transition">الأداء الحي 📈</a>
+                <a href="#specs" class="hover:text-blue-500 transition">المواصفات الفنية</a>
+                <a href="#admin-section" class="hover:text-red-400 transition border border-red-900/40 px-3 py-1 rounded text-[10px]">لوحة الإدارة ⚙️</a>
+            </div>
+            <!-- CTA Button -->
+            <div>
+                <a href="#order" class="px-5 py-2 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white text-xs font-extrabold rounded-xl transition shadow-lg shadow-blue-500/20">
+                    احجز الآن
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section / القسم التعريفي الرئيسي -->
+    <section id="hero" class="relative py-20 px-4 overflow-hidden border-b border-slate-900">
+        <!-- Background decorative glows -->
+        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-600/10 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-indigo-600/10 rounded-full blur-[120px] pointer-events-none"></div>
+        
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+            <div class="lg:col-span-7 text-right">
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-yellow-500/10 text-yellow-500 border border-yellow-500/20 mb-6">
+                    <span class="w-2 h-2 rounded-full bg-yellow-500 animate-pulse"></span>
+                    روبوت تداول الذهب الاحترافي المطور v2
+                </span>
+                <h1 class="text-4xl md:text-6xl font-black text-white leading-tight mb-6">
+                    تداول الذهب الآلي <br>
+                    بين يديك مع <span class="text-transparent bg-clip-text bg-gradient-to-l from-yellow-400 to-amber-500 tech-font">AI GOLD ROBOT</span>
+                </h1>
+                <p class="text-slate-400 text-sm md:text-base leading-relaxed mb-8 max-w-xl">
+                    وحدة التداول المادي الفاخرة الأولى من نوعها عالمياً المبرمجة لتداول الذهب <span class="text-yellow-500 font-bold">XAU/USD</span> على فريم الـ 5 دقائق. قم بتوصيل الروبوت ليرتبط فوراً وبأمان بـ <span class="text-white font-bold">حسابك في MT5</span> ويبدأ في صيد الأرباح الفورية.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#order" class="px-8 py-3.5 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white text-sm font-bold rounded-xl transition shadow-lg shadow-emerald-500/30 text-center flex items-center justify-center gap-2">
+                        <span>احجز الروبوت الآن (ديبوزت $100) ⚡</span>
+                    </a>
+                    <a href="#unboxing" class="px-8 py-3.5 bg-slate-900 hover:bg-slate-800 text-slate-300 text-sm font-bold rounded-xl transition border border-slate-800 text-center">
+                        جرب فتح العلبة التفاعلي 📦
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Graphic Illustration -->
+            <div class="lg:col-span-5 flex justify-center">
+                <div class="relative w-80 h-80 md:w-96 md:h-96 bg-slate-900/60 border border-slate-800 rounded-3xl p-6 flex flex-col justify-between items-center shadow-2xl overflow-hidden group">
+                    <div class="absolute inset-0 bg-gradient-to-b from-yellow-500/5 to-transparent"></div>
+                    <!-- Cybernetic Grid -->
+                    <div class="absolute inset-0 opacity-5" style="background-image: linear-gradient(#f59e0b 1px, transparent 1px), linear-gradient(90deg, #f59e0b 1px, transparent 1px); background-size: 15px 15px;"></div>
+                    
+                    <span class="text-[10px] text-yellow-500 font-extrabold tracking-widest tech-font">GOLD SPECIALIZED MODULE v2</span>
+                    
+                    <!-- Pulsing Central Robot Vector -->
+                    <svg class="w-44 h-44 text-yellow-500 active-glow transition duration-500 group-hover:scale-105" viewBox="0 0 100 100" fill="none">
+                        <circle cx="50" cy="50" r="42" fill="#0d0e12" stroke="#eab308" stroke-width="2"/>
+                        <path d="M50 25 L50 15" stroke="#eab308" stroke-width="3" stroke-linecap="round"/>
+                        <circle cx="50" cy="12" r="3" fill="#eab308" class="animate-ping"/>
+                        <rect x="28" y="28" width="44" height="34" rx="12" fill="#1e293b" stroke="#eab308" stroke-width="3"/>
+                        <rect x="36" y="36" width="28" height="14" rx="6" fill="#020617"/>
+                        <!-- Glowing eyes -->
+                        <circle cx="43" cy="43" r="3" fill="#fbbf24" class="animate-pulse"/>
+                        <circle cx="57" cy="43" r="3" fill="#fbbf24" class="animate-pulse"/>
+                        <!-- Connected chip lines -->
+                        <path d="M20 50 L28 50 M72 50 L80 50" stroke="#eab308" stroke-width="2"/>
+                        <rect x="24" y="68" width="52" height="12" rx="4" fill="#1e293b" stroke="#eab308"/>
+                        <path d="M30 74 H70" stroke="#10b981" stroke-width="2"/>
+                    </svg>
+
+                    <div class="text-center">
+                        <h3 class="text-white font-bold text-sm">تداول آلي بالكامل متوافق مع MT5</h3>
+                        <p class="text-[10px] text-slate-500 mt-1">يعمل على فريم 5 دقائق باستراتيجية سكالبينج متطورة</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pre-Order Booking & Secure Payment Section / قسم طلب وحجز المنتج وبوابة الدفع الإلكتروني المحدثة (موقعها بالأعلى الآن) -->
+    <section id="order" class="py-20 px-4 bg-[#0a0c10] border-b border-slate-900">
+        <div class="max-w-3xl mx-auto">
+            <div class="bg-gradient-to-b from-slate-900 to-slate-950 border border-slate-800 rounded-3xl p-8 md:p-12 shadow-2xl relative overflow-hidden text-right">
+                <div class="absolute inset-0 bg-emerald-500/5 pointer-events-none"></div>
+                <div class="absolute -top-12 -left-12 w-48 h-48 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+                <!-- Progress Header -->
+                <div class="text-center mb-10">
+                    <span class="px-3 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-bold rounded-full border border-emerald-500/20">تأكيد الطلب الفوري المباشر</span>
+                    <h2 class="text-3xl font-extrabold text-white mt-4">احجز جهازك وادفع ديبوزت التأمين</h2>
+                    <p class="text-slate-400 text-xs mt-2">يتطلب حجز الروبوت دفع ديبوزت بسيط بقيمة <span class="text-emerald-400 font-bold">$100</span> لضمان جدية الشحن على أن يُخصم المبلغ من القيمة الكلية عند التسليم.</p>
+                </div>
+
+                <!-- Step 1: Shipping Form / بيانات الشحن والعميل -->
+                <form id="preorder-form" onsubmit="handlePreorderSubmit(event)" class="space-y-6">
+                    <h3 class="text-sm font-bold text-yellow-500 border-b border-slate-800 pb-2 mb-4 flex items-center gap-2">
+                        <span>📍</span>
+                        <span>الخطوة 1: تفاصيل المستلم والشحن</span>
+                    </h3>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-400 mb-2">الاسم الكامل للمستلم</label>
+                            <input type="text" id="cust-name" required placeholder="مثال: أحمد محمد" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-xs text-white placeholder-slate-600 focus:outline-none focus:border-yellow-500 transition">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-400 mb-2">رقم الجوال لتأكيد الشحنة</label>
+                            <input type="tel" id="cust-phone" required placeholder="مثال: +966 50 000 0000" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-xs text-white placeholder-slate-600 focus:outline-none focus:border-yellow-500 transition text-left">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold text-slate-400 mb-2">البريد الإلكتروني لإرسال الفاتورة ورخصة تفعيل MT5</label>
+                        <input type="email" id="cust-email" required placeholder="مثال: ahmed@example.com" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-xs text-white placeholder-slate-600 focus:outline-none focus:border-yellow-500 transition text-left">
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold text-slate-400 mb-2">عنوان التوصيل السريع بالتفصيل</label>
+                        <textarea rows="3" id="cust-address" required placeholder="اكتب المدينة والحي والشارع بالتفصيل..." class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-xs text-white placeholder-slate-600 focus:outline-none focus:border-yellow-500 transition"></textarea>
+                    </div>
+
+                    <div class="bg-slate-950/80 p-4 rounded-xl border border-slate-800 flex justify-between items-center">
+                        <div>
+                            <p class="text-xs font-bold text-white">مجموع حجز روبوت تداول الذهب v2</p>
+                            <p class="text-[10px] text-slate-500 mt-1">المبلغ الكلي: $149 | قيمة الديبوزت الفوري المطلوب: $100</p>
+                        </div>
+                        <div class="text-left">
+                            <span class="text-[10px] text-slate-500 block">ديبوزت الحجز الفوري</span>
+                            <span class="text-lg font-black text-emerald-400 tech-font">$100.00</span>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="w-full py-4 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white text-xs font-extrabold rounded-xl transition shadow-lg shadow-emerald-500/20 flex items-center justify-center gap-2">
+                        <span>الانتقال لاختيار طريقة الدفع الآمن (ديبوزت $100) 💳</span>
+                    </button>
+                </form>
+
+                <!-- Step 2: Payment Method Selection & Checkout / بوابة الدفع المزدوجة (بطاقة أو بايننس) -->
+                <div id="payment-gateway-card" class="hidden space-y-6">
+                    <div class="flex justify-between items-center border-b border-slate-800 pb-3 mb-6">
+                        <h3 class="text-sm font-bold text-emerald-400 flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                            الخطوة 2: اختيار طريقة دفع الديبوزت ($100)
+                        </h3>
+                        <span class="text-[10px] text-slate-500 font-mono">SECURE GATEWAY v2</span>
+                    </div>
+
+                    <!-- Tabs to switch between Card and Binance USDT -->
+                    <div class="grid grid-cols-2 gap-3 mb-6">
+                        <button onclick="switchPaymentTab('card')" id="tab-card-btn" class="py-3 px-4 rounded-xl border-2 border-yellow-500 bg-yellow-950/10 text-white font-bold text-xs flex items-center justify-center gap-2 transition-all">
+                            <span>💳</span>
+                            <span>البطاقة الائتمانية</span>
+                        </button>
+                        <button onclick="switchPaymentTab('crypto')" id="tab-crypto-btn" class="py-3 px-4 rounded-xl border border-slate-800 bg-slate-950/40 text-slate-400 font-bold text-xs flex items-center justify-center gap-2 transition-all">
+                            <span class="text-yellow-500">🪙</span>
+                            <span>بايننس USDT (TRC-20)</span>
+                        </button>
+                    </div>
+
+                    <!-- TAB 1: Credit Card / فيزا وماستركارد -->
+                    <div id="panel-card" class="space-y-6">
+                        <!-- Simulated Credit Card Visual Display -->
+                        <div class="bg-gradient-to-r from-yellow-950 via-slate-900 to-slate-950 rounded-2xl p-6 text-white space-y-6 shadow-xl relative overflow-hidden max-w-sm mx-auto">
+                            <div class="absolute inset-0 bg-yellow-500/10 pointer-events-none"></div>
+                            <div class="flex justify-between items-start">
+                                <svg class="w-12 h-8 text-white/40" viewBox="0 0 100 60" fill="currentColor">
+                                    <circle cx="30" cy="30" r="25" fill="#eb001b" opacity="0.8"/>
+                                    <circle cx="55" cy="30" r="25" fill="#f79e1b" opacity="0.8"/>
+                                </svg>
+                                <span class="text-[10px] tracking-widest tech-font text-slate-300">PREMIUM DEPOSIT</span>
+                            </div>
+                            <div class="space-y-1">
+                                <p class="text-xs text-slate-400">مبلغ الديبوزت</p>
+                                <p class="text-2xl font-black tech-font text-emerald-400">$100.00 USD</p>
+                            </div>
+                            <div class="space-y-1">
+                                <p class="text-[10px] text-slate-400">رقم البطاقة</p>
+                                <p id="card-display-num" class="text-base tracking-[0.2em] font-mono text-white">•••• •••• •••• ••••</p>
+                            </div>
+                            <div class="flex justify-between items-center text-xs">
+                                <div>
+                                    <p class="text-[8px] text-slate-400">صاحب البطاقة</p>
+                                    <p id="card-display-name" class="font-bold truncate max-w-[150px]">CUSTOMER NAME</p>
+                                </div>
+                                <div class="text-left">
+                                    <p class="text-[8px] text-slate-400">تاريخ الانتهاء</p>
+                                    <p id="card-display-expiry" class="font-bold font-mono">MM/YY</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Credit Card inputs -->
+                        <form id="payment-form" onsubmit="handlePaymentSubmit(event, 'Credit Card')" class="space-y-4 max-w-md mx-auto">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-400 mb-1.5">الاسم على البطاقة</label>
+                                <input type="text" id="card-name" required placeholder="مثال: Ahmed Mohamed" oninput="updateCardDisplay()" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-xs text-white placeholder-slate-600 focus:outline-none focus:border-yellow-500 transition uppercase">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-slate-400 mb-1.5">رقم بطاقة الائتمان (Visa / Mastercard)</label>
+                                <div class="relative">
+                                    <input type="text" id="card-number" required maxlength="19" placeholder="4000 1234 5678 9010" oninput="formatCardNumber(this); updateCardDisplay();" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-xs text-white placeholder-slate-600 focus:outline-none focus:border-yellow-500 transition font-mono tracking-widest">
+                                    <span class="absolute left-3 top-3 text-slate-600">💳</span>
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-400 mb-1.5">تاريخ الانتهاء</label>
+                                    <input type="text" id="card-expiry" required maxlength="5" placeholder="MM/YY" oninput="formatExpiry(this); updateCardDisplay();" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-xs text-white placeholder-slate-600 focus:outline-none focus:border-yellow-500 transition font-mono text-center">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-400 mb-1.5">الرمز السري (CVV)</label>
+                                    <input type="password" id="card-cvv" required maxlength="3" placeholder="•••" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-xs text-white placeholder-slate-600 focus:outline-none focus:border-yellow-500 transition font-mono text-center">
+                                </div>
+                            </div>
+
+                            <div class="text-[10px] text-slate-500 flex items-center gap-1.5 bg-slate-950/40 p-3 rounded-lg border border-slate-900">
+                                <svg class="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                                <span>سيتم سحب مبلغ الديبوزت ($100) وتأكيد حجزك فوراً بأمان.</span>
+                            </div>
+
+                            <div class="flex gap-4 pt-2">
+                                <button type="button" onclick="goBackToShipping()" class="flex-1 py-3.5 bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-bold rounded-xl transition">
+                                    بيانات الشحن ↩
+                                </button>
+                                <button type="submit" class="flex-1 py-3.5 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white text-xs font-extrabold rounded-xl transition shadow-lg shadow-emerald-500/20">
+                                    دفع الديبوزت ($100) ⚡
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- TAB 2: Binance USDT (TRC-20) / دفع العملات الرقمية بايننس -->
+                    <div id="panel-crypto" class="hidden space-y-6">
+                        <div class="bg-slate-950 border border-yellow-500/20 rounded-2xl p-6 text-right space-y-4 max-w-md mx-auto relative overflow-hidden">
+                            <div class="absolute top-0 left-0 bg-yellow-500/10 text-yellow-500 text-[10px] font-bold px-3 py-1 rounded-br-xl tech-font">BINANCE PAY (TRC20)</div>
+                            
+                            <h4 class="text-xs font-bold text-slate-300">قم بتحويل ديبوزت الدفع المباشر:</h4>
+                            <div class="text-center py-4 bg-slate-900/50 rounded-xl border border-slate-800">
+                                <span class="text-3xl font-black tech-font text-yellow-500">100.00 <span class="text-sm text-white">USDT</span></span>
+                                <p class="text-[10px] text-slate-500 mt-1">يرجى إرسال القيمة على شبكة TRON (TRC-20) فقط</p>
+                            </div>
+
+                            <!-- QR Code Simulated Vector -->
+                            <div class="flex flex-col items-center justify-center py-4 space-y-3">
+                                <div class="w-36 h-36 bg-white p-2 rounded-xl flex items-center justify-center relative shadow-lg">
+                                    <!-- Simple QR code SVG -->
+                                    <svg class="w-full h-full text-black" viewBox="0 0 100 100" fill="currentColor">
+                                        <rect x="0" y="0" width="25" height="25" />
+                                        <rect x="5" y="5" width="15" height="15" fill="white" />
+                                        <rect x="8" y="8" width="9" height="9" />
+                                        
+                                        <rect x="75" y="0" width="25" height="25" />
+                                        <rect x="80" y="5" width="15" height="15" fill="white" />
+                                        <rect x="83" y="8" width="9" height="9" />
+
+                                        <rect x="0" y="75" width="25" height="25" />
+                                        <rect x="5" y="80" width="15" height="15" fill="white" />
+                                        <rect x="8" y="83" width="9" height="9" />
+
+                                        <rect x="35" y="10" width="10" height="5" /><rect x="50" y="5" width="5" height="15" />
+                                        <rect x="10" y="35" width="5" height="20" /><rect x="25" y="45" width="15" height="15" />
+                                        <rect x="50" y="35" width="25" height="25" /><rect x="80" y="40" width="10" height="10" />
+                                        <rect x="40" y="70" width="20" height="10" /><rect x="70" y="70" width="20" height="25" />
+                                    </svg>
+                                    <div class="absolute inset-0 m-auto w-8 h-8 bg-yellow-500 rounded-lg flex items-center justify-center border-2 border-white text-black font-extrabold text-[10px] tech-font">USDT</div>
+                                </div>
+                                <span class="text-[10px] text-slate-400">امسح الكود عبر تطبيق بايننس للدفع السريع</span>
+                            </div>
+
+                            <!-- Destination TRC20 Wallet Address -->
+                            <div class="space-y-1.5">
+                                <label class="block text-xs font-bold text-slate-400">عنوان محفظة الاستقبال المعتمدة (TRC-20)</label>
+                                <div class="flex gap-2">
+                                    <input type="text" id="crypto-address-input" readonly value="TYc9D7p8yBmxN6G9T11MstqD8b45G6TrC20" class="flex-1 bg-slate-900 border border-slate-800 rounded-xl px-3 py-2 text-[11px] font-mono text-white text-left focus:outline-none select-all">
+                                    <button type="button" onclick="copyCryptoAddress()" class="px-4 py-2 bg-yellow-500 hover:bg-yellow-400 text-black text-xs font-bold rounded-xl transition">نسخ 📋</button>
+                                </div>
+                                <p class="text-[9px] text-slate-500 text-left" id="copy-confirm-text">انقر فوق زر النسخ لنسخ العنوان فوراً.</p>
+                            </div>
+
+                            <!-- Simulated TxID input for proof -->
+                            <form id="crypto-payment-form" onsubmit="handlePaymentSubmit(event, 'Binance USDT (TRC-20)')" class="space-y-4 pt-4 border-t border-slate-900">
+                                <div>
+                                    <label class="block text-xs font-bold text-yellow-500 mb-1.5">أدخل رقم المعاملة (TxID) أو كود الإرسال بعد التحويل</label>
+                                    <input type="text" id="crypto-txid" required placeholder="مثال: f83b927ac83d..." class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-xs text-white placeholder-slate-600 focus:outline-none focus:border-yellow-500 transition font-mono">
+                                </div>
+
+                                <div class="flex gap-4 pt-2">
+                                    <button type="button" onclick="goBackToShipping()" class="flex-1 py-3.5 bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-bold rounded-xl transition">
+                                        بيانات الشحن ↩
+                                    </button>
+                                    <button type="submit" class="flex-1 py-3.5 bg-gradient-to-r from-yellow-600 to-yellow-500 hover:from-yellow-500 text-black text-xs font-extrabold rounded-xl transition shadow-lg shadow-yellow-500/20">
+                                        تأكيد الإرسال والتحقق ⚡
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3D Secure / Processing Payment Loading Simulation / شاشة جاري معالجة الدفع السحابي -->
+                <div id="payment-processing-loader" class="hidden space-y-6 py-12 text-center">
+                    <div class="w-16 h-16 border-4 border-t-emerald-500 border-r-transparent border-b-slate-800 border-l-transparent rounded-full animate-spin mx-auto"></div>
+                    <div>
+                        <h3 class="text-lg font-bold text-white">جاري التحقق ومعالجة دفعة الديبوزت...</h3>
+                        <p class="text-slate-400 text-xs mt-2">يرجى الانتظار وعدم إغلاق الصفحة، نقوم بالتحقق من صحة معلومات الدفع ومطابقتها سحابياً.</p>
+                    </div>
+                </div>
+
+                <!-- Simulated Order Success Card Popup / شاشة تأكيد النجاح بعد الدفع والطلب -->
+                <div id="order-success-card" class="hidden bg-slate-900 border border-emerald-500/30 rounded-2xl p-6 text-center space-y-4">
+                    <div class="w-14 h-14 bg-emerald-500/10 border border-emerald-500/30 rounded-full flex items-center justify-center text-emerald-400 mx-auto animate-bounce">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white">تم استلام الديبوزت وتأكيد حجز الروبوت!</h3>
+                    <div class="bg-slate-950/60 p-4 rounded-xl border border-slate-800 text-right space-y-2 text-xs max-w-md mx-auto">
+                        <p class="text-slate-400">اسم المستلم: <span class="text-white font-bold" id="success-display-name">-</span></p>
+                        <p class="text-slate-400">رقم تتبع الشحنة المبدئي: <span class="text-blue-400 font-mono font-bold">#TRX-94827-AI</span></p>
+                        <p class="text-slate-400">طريقة الدفع: <span class="text-yellow-400 font-bold" id="success-display-method">-</span></p>
+                        <p class="text-slate-400">ديبوزت مدفوع إلكترونياً: <span class="text-emerald-400 font-bold">$100.00 (مؤكد)</span></p>
+                        <p class="text-slate-400">رخصة ربط المنصة: <span class="text-white font-bold">رخصة MT5 نشطة ومقترنة</span></p>
+                        <p class="text-slate-400">المبلغ المتبقي عند الاستلام: <span class="text-white font-bold">$49.00</span></p>
+                    </div>
+                    <p class="text-slate-400 text-xs leading-relaxed max-w-md mx-auto">
+                        لقد تم تأكيد طلب الحجز الخاص بك بنجاح بعد استلام الديبوزت، سنرسل رخصة تفعيل MT5 والفاتورة الإلكترونية عبر البريد الإلكتروني المدخل فوراً، وسيقوم مسؤول الشحن بالاتصال بك خلال ٢٤ ساعة.
+                    </p>
+                    <button onclick="resetPreorderForm()" class="px-5 py-2 bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold rounded-xl transition">
+                        حجز منتج آخر
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Unboxing Simulator Section / قسم محاكي فتح العلبة المطور (الآن أسفل الطلب) -->
+    <section id="unboxing" class="py-20 px-4 bg-slate-950/20 border-b border-slate-900">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-blue-500 font-bold text-xs tracking-wider tech-font">INTERACTIVE PLAYGROUND</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-white mt-2">محاكي فتح علبة الروبوت الافتراضي</h2>
+                <p class="text-slate-400 text-sm mt-3">
+                    عش تجربة واقعية لفتح العلبة الفاخرة، واستكشاف اللوحة المعالجة، والكيبل المدمج، وتشغيل عيون الروبوت لتفعيل تداولاتك على الذهب عبر حساب MT5 الخاص بك!
+                </p>
+            </div>
+
+            <!-- Simulator Workspace Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+                
+                <!-- Left Control Panel -->
+                <div class="lg:col-span-4 flex flex-col justify-between gap-4">
+                    <div class="bg-slate-900/95 border border-slate-800/80 rounded-2xl p-5 shadow-xl flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-base font-bold text-white mb-4 flex items-center gap-2 border-b border-slate-800/60 pb-3">
+                                <span class="text-blue-500">■</span> خطوات التشغيل والمزامنة
+                            </h3>
+                            
+                            <div class="space-y-5">
+                                <!-- Step 1 -->
+                                <div id="step-1-indicator" class="flex gap-3 items-start border-l-2 border-blue-600 pl-4 pb-2 transition-all">
+                                    <div class="w-6 h-6 rounded-full bg-blue-600 text-white text-xs font-bold flex items-center justify-center shrink-0">1</div>
+                                    <div class="w-full">
+                                        <h4 class="font-bold text-white text-xs">فحص العبوة الفاخرة</h4>
+                                        <p class="text-[11px] text-slate-400 mt-0.5">تصميم متكامل وخالي من أي نصوص أو شعارات غير مطلوبة لتجربة نظيفة ومثالية.</p>
+                                        <button id="btn-open-box" onclick="triggerOpenBox()" class="mt-2.5 px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold rounded-lg transition shadow-lg shadow-blue-500/20 w-full">
+                                            افتح علبة الروبوت الآن 📦
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <!-- Step 2 -->
+                                <div id="step-2-indicator" class="flex gap-3 items-start border-l-2 border-slate-800 pl-4 pb-2 opacity-40 transition-all">
+                                    <div id="step-2-num" class="w-6 h-6 rounded-full bg-slate-800 text-slate-400 text-xs font-bold flex items-center justify-center shrink-0">2</div>
+                                    <div class="w-full">
+                                        <h4 class="font-bold text-white text-xs">استكشاف المكونات الداخلية للعلبة</h4>
+                                        <p class="text-[11px] text-slate-400 mt-0.5">انقر على القطع داخل الحشوة للتعرف على وظائف الروبوت واللوحة الأم المخصصة للذهب.</p>
+                                        <div class="grid grid-cols-3 gap-1.5 mt-2 hidden" id="exploration-buttons">
+                                            <button onclick="highlightElement('robot')" class="px-2 py-1 bg-slate-800 hover:bg-slate-700 text-[10px] text-white rounded">الروبوت</button>
+                                            <button onclick="highlightElement('cable')" class="px-2 py-1 bg-slate-800 hover:bg-slate-700 text-[10px] text-white rounded">الكابل</button>
+                                            <button onclick="highlightElement('board')" class="px-2 py-1 bg-slate-800 hover:bg-slate-700 text-[10px] text-white rounded">البوردة</button>
+                                        </div>
+                                        <button id="btn-power-on" onclick="triggerConnectCable()" class="mt-3 px-4 py-2 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold rounded-lg transition shadow-lg shadow-emerald-500/20 w-full hidden">
+                                            توصيل كابل التشغيل ⚡
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <!-- Step 3 -->
+                                <div id="step-3-indicator" class="flex gap-3 items-start border-l-2 border-slate-800 pl-4 opacity-40 transition-all">
+                                    <div id="step-3-num" class="w-6 h-6 rounded-full bg-slate-800 text-slate-400 text-xs font-bold flex items-center justify-center shrink-0">3</div>
+                                    <div>
+                                        <h4 class="font-bold text-white text-xs">الربط بـ MT5 وبدء صفقات الذهب</h4>
+                                        <p class="text-[11px] text-slate-400 mt-0.5">شاهد عيون الروبوت تضيء باللون الكهرماني الذهبي مع بدء تنشيط صفقات الذهب الفورية.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Reset / Replay -->
+                        <div class="mt-6 pt-4 border-t border-slate-800/60 flex justify-between items-center">
+                            <span class="text-[10px] text-slate-500">انقر لإعادة تصفير المحاكاة</span>
+                            <button onclick="resetSimulator()" class="px-3 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-semibold rounded-lg transition-all flex items-center gap-1.5">
+                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 1121.21 15H19"></path></svg>
+                                إعادة البدء
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Simulator Console Log -->
+                    <div class="bg-black border border-slate-800/80 rounded-2xl p-4 shadow-xl h-44 flex flex-col justify-between">
+                        <div class="flex items-center justify-between border-b border-slate-900 pb-2 mb-2">
+                            <span class="text-[10px] font-bold text-slate-400 flex items-center gap-1.5">
+                                <span class="w-2 h-2 rounded-full bg-yellow-500 animate-ping"></span>
+                                سجل ربط منصة MT5 المباشرة
+                            </span>
+                            <span class="text-[9px] tech-font text-yellow-500 font-bold">MT5 CONNECTED</span>
+                        </div>
+                        <div id="terminal-logs" class="flex-1 overflow-y-auto text-[10px] tech-font space-y-1 text-emerald-400 pr-1">
+                            <p class="text-slate-500">[System] محاكي تداول الذهب مستعد بالكامل...</p>
+                            <p class="text-slate-500">[System] انقر على زر "افتح علبة الروبوت" لمشاهدة الربط.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Simulator Stage / مسرح العرض والمحاكاة -->
+                <div class="lg:col-span-8 bg-slate-900 border border-slate-800/80 rounded-2xl overflow-hidden shadow-2xl relative flex flex-col min-h-[480px]">
+                    <div class="absolute top-4 left-4 right-4 flex justify-between items-center z-10 pointer-events-none">
+                        <span class="px-2.5 py-0.5 bg-black/60 backdrop-blur text-white text-[10px] font-bold rounded-full tech-font">PREVIEW STUDIO</span>
+                        <span class="px-2.5 py-0.5 bg-yellow-600/85 backdrop-blur text-black text-[10px] font-bold rounded-full">تداول الذهب على فريم 5 دقائق</span>
+                    </div>
+
+                    <!-- Interactive Orange Desk Area -->
+                    <div class="flex-1 orange-desk relative flex items-center justify-center p-6">
+                        
+                        <!-- Box Wrapper -->
+                        <div id="unboxing-box-wrapper" class="relative w-full max-w-md aspect-[4/3] flex items-center justify-center transition-all duration-700">
+                            
+                            <!-- BOX COVER (LID) -->
+                            <div id="box-lid" class="absolute inset-0 bg-slate-950 border-4 border-slate-800 rounded-2xl shadow-2xl p-6 flex flex-col justify-between z-30 transition-all duration-[1200ms] origin-top">
+                                <!-- Box Accents -->
+                                <div class="absolute top-0 left-0 w-6 h-6 border-t-4 border-l-4 border-yellow-500 rounded-tl-xl"></div>
+                                <div class="absolute top-0 right-0 w-6 h-6 border-t-4 border-r-4 border-yellow-500 rounded-tr-xl"></div>
+                                <div class="absolute bottom-0 left-0 w-6 h-6 border-b-4 border-l-4 border-yellow-500 rounded-bl-xl"></div>
+                                <div class="absolute bottom-0 right-0 w-6 h-6 border-b-4 border-r-4 border-yellow-500 rounded-br-xl"></div>
+
+                                <div class="flex justify-between items-start">
+                                    <div class="flex items-center gap-2">
+                                        <!-- Robot Graphic Vector -->
+                                        <svg class="w-8 h-8 text-yellow-500" viewBox="0 0 100 100" fill="none">
+                                            <circle cx="50" cy="50" r="40" fill="#1e293b" stroke="#eab308" stroke-width="4"/>
+                                            <rect x="25" y="42" width="50" height="20" rx="10" fill="#0f172a" stroke="#eab308" stroke-width="2"/>
+                                            <circle cx="40" cy="52" r="4" fill="#fbbf24" class="animate-pulse"/>
+                                            <circle cx="60" cy="52" r="4" fill="#fbbf24" class="animate-pulse"/>
+                                        </svg>
+                                        <div>
+                                            <h2 class="text-xl font-black text-white tracking-widest tech-font">AI ROBOT</h2>
+                                            <p class="text-[8px] text-yellow-500 tracking-wider font-bold">GOLD TRADING SYSTEM</p>
+                                        </div>
+                                    </div>
+                                    <div class="text-right">
+                                        <span class="text-[10px] font-bold text-slate-500 border border-slate-800 px-2 py-0.5 rounded bg-slate-900/50">MT5 COMPATIBLE</span>
+                                    </div>
+                                </div>
+
+                                <!-- Center Box Illustration -->
+                                <div class="flex-1 my-3 bg-slate-900/40 border border-slate-800/50 rounded-xl relative overflow-hidden flex items-center justify-center p-4">
+                                    <div class="absolute inset-0 opacity-5" style="background-image: linear-gradient(#f59e0b 1px, transparent 1px), linear-gradient(90deg, #f59e0b 1px, transparent 1px); background-size: 15px 15px;"></div>
+                                    <div class="z-10 flex flex-col items-center text-center">
+                                        <svg class="w-16 h-16 text-yellow-500 animate-pulse" viewBox="0 0 100 100" fill="none">
+                                            <path d="M10 50 Q50 20 90 50" stroke="#fbbf24" stroke-width="2" stroke-dasharray="4 4" />
+                                            <rect x="35" y="32" width="30" height="32" rx="6" fill="#0f172a" stroke="#fbbf24" stroke-width="2"/>
+                                            <circle cx="44" cy="42" r="2.5" fill="#fbbf24"/>
+                                            <circle cx="56" cy="42" r="2.5" fill="#fbbf24"/>
+                                        </svg>
+                                        <span class="text-[10px] text-yellow-500 font-bold tracking-widest mt-2 tech-font">XAU/USD BOT MODULE</span>
+                                    </div>
+                                </div>
+
+                                <div class="border-t border-slate-800/80 pt-2.5 flex justify-between items-center text-[9px] text-slate-400 font-semibold">
+                                    <span class="flex items-center gap-1">
+                                        <span class="w-1.5 h-1.5 rounded-full bg-yellow-500"></span> SECURE MT5 HARDWARE MODULE
+                                    </span>
+                                    <span>تداول ذهب ذكي فريم 5 دقائق</span>
+                                </div>
+                            </div>
+
+                            <!-- TRAY PACKAGING (INNER CONTENT) -->
+                            <div id="box-tray" class="absolute inset-0 bg-slate-950 border-4 border-slate-800 rounded-2xl shadow-inner p-5 flex flex-col justify-between z-20 opacity-0 scale-95 transition-all duration-700 overflow-hidden">
+                                <div class="absolute inset-1.5 border border-slate-900 rounded-xl bg-slate-900/20 pointer-events-none shadow-inner"></div>
+
+                                <div class="z-10 flex justify-between items-center pb-2 border-b border-slate-900">
+                                    <span class="text-[9px] text-slate-500 font-bold tracking-wider">BOX CONTENTS / محتويات العبوة</span>
+                                    <span class="text-[9px] text-yellow-500 font-bold tech-font">AI GOLD ROBOT v2</span>
+                                </div>
+
+                                <!-- Slots -->
+                                <div class="flex-1 my-3 grid grid-cols-12 gap-3 items-stretch z-10">
+                                    
+                                    <!-- Slot 1: Motherboard -->
+                                    <div id="slot-board" onclick="showItemDetails('board')" class="col-span-4 bg-slate-950/80 border border-slate-900 hover:border-yellow-500/50 rounded-xl p-2.5 flex flex-col justify-between items-center cursor-pointer transition">
+                                        <span class="text-[8px] text-slate-500 font-bold">بوردة النظام v2</span>
+                                        <svg class="w-full h-20 text-slate-700" viewBox="0 0 100 100" fill="none">
+                                            <rect x="10" y="10" width="80" height="80" rx="4" fill="#0f172a" stroke="#eab308" stroke-width="1.5"/>
+                                            <rect x="40" y="40" width="20" height="20" rx="2" fill="#020617" stroke="#eab308" stroke-width="1.5"/>
+                                            <text x="43" y="52" fill="#fbbf24" font-size="6" font-family="sans-serif" font-weight="bold">GOLD</text>
+                                        </svg>
+                                        <span class="text-[9px] text-slate-400 font-bold">بوردة MT5</span>
+                                    </div>
+
+                                    <!-- Slot 2: Robot -->
+                                    <div id="slot-robot" onclick="showItemDetails('robot')" class="col-span-4 bg-slate-950/80 border border-slate-900 hover:border-yellow-500/50 rounded-xl p-2.5 flex flex-col justify-between items-center cursor-pointer transition">
+                                        <span class="text-[8px] text-slate-500 font-bold">مجسم الروبوت</span>
+                                        <div class="relative w-full flex justify-center py-1">
+                                            <svg id="robot-svg" class="w-12 h-24" viewBox="0 0 100 150" fill="none">
+                                                <g id="robot-frame">
+                                                    <path d="M50 30 L50 15" stroke="#94a3b8" stroke-width="2.5"/>
+                                                    <circle cx="50" cy="12" r="3.5" fill="#94a3b8"/>
+                                                    <rect x="25" y="30" width="50" height="40" rx="15" fill="#475569" stroke="#64748b" stroke-width="3"/>
+                                                    <rect x="33" y="40" width="34" height="16" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1.5"/>
+                                                    <circle id="eye-left" cx="42" cy="48" r="3.5" fill="#334155"/>
+                                                    <circle id="eye-right" cx="58" cy="48" r="3.5" fill="#334155"/>
+                                                    <rect x="20" y="76" width="60" height="48" rx="12" fill="#475569" stroke="#64748b" stroke-width="3"/>
+                                                    <circle id="chest-led" cx="50" cy="96" r="6" fill="#334155"/>
+                                                </g>
+                                            </svg>
+                                            <svg id="cable-connection" class="absolute inset-0 w-full h-full pointer-events-none hidden" viewBox="0 0 100 150">
+                                                <path d="M90 130 C90 10 50 10 50 12" fill="none" stroke="#f8fafc" stroke-width="2.5" stroke-dasharray="4 4" class="animate-pulse" />
+                                            </svg>
+                                        </div>
+                                        <span class="text-[9px] text-yellow-500 font-extrabold flex items-center gap-1">
+                                            <span id="robot-status-dot" class="w-1.5 h-1.5 rounded-full bg-slate-500"></span>
+                                            <span id="robot-status-text">غير متصل</span>
+                                        </span>
+                                    </div>
+
+                                    <!-- Slot 3: Cable -->
+                                    <div id="slot-cable" onclick="showItemDetails('cable')" class="col-span-4 bg-slate-950/80 border border-slate-900 hover:border-yellow-500/50 rounded-xl p-2.5 flex flex-col justify-between items-center cursor-pointer transition">
+                                        <span class="text-[8px] text-slate-500 font-bold">كابل USB-C</span>
+                                        <svg class="w-16 h-20 text-slate-400" viewBox="0 0 100 100" fill="none">
+                                            <path d="M30 40 C30 20 70 20 70 40 C70 60 30 60 30 80 C30 90 70 90 70 80" stroke="#f1f5f9" stroke-width="3.5"/>
+                                            <rect x="64" y="68" width="12" height="18" rx="2" fill="#cbd5e1"/>
+                                        </svg>
+                                        <span class="text-[9px] text-slate-400 font-bold">كابل المزامنة</span>
+                                    </div>
+                                </div>
+
+                                <div class="border-t border-slate-900 pt-2 flex justify-between items-center text-[8px] text-slate-500">
+                                    <span>مكونات ملموسة وواقعية بالكامل للذهب</span>
+                                    <span>الإصدار المطور للربط بـ MT5</span>
+                                </div>
+                            </div>
+
+                            <!-- ONGOING TRADING LIVE SIMULATOR (DASHBOARD AT THE END) -->
+                            <div id="trading-dashboard" class="absolute inset-0 bg-slate-950 border-4 border-slate-800 rounded-2xl p-5 flex flex-col justify-between z-10 opacity-0 pointer-events-none transition-all duration-1000">
+                                <div class="absolute inset-0 border border-yellow-500/20 rounded-xl animate-pulse"></div>
+
+                                <div class="flex justify-between items-center border-b border-yellow-900/40 pb-2 z-10">
+                                    <span class="text-[11px] font-bold text-yellow-500 flex items-center gap-1.5">
+                                        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
+                                        تنشيط التداول الذاتي للذهب على MT5
+                                    </span>
+                                    <span class="text-[10px] tech-font text-white bg-slate-900 border border-slate-800 px-2 py-0.5 rounded">GOLD: LIVE 5m</span>
+                                </div>
+
+                                <!-- Chart and Stats -->
+                                <div class="flex-1 my-3 bg-slate-950/90 border border-slate-800/80 rounded-xl p-3 flex flex-col justify-between overflow-hidden relative z-10">
+                                    <div class="absolute inset-0 opacity-5" style="background-image: linear-gradient(#fbbf24 1px, transparent 1px), linear-gradient(90deg, #fbbf24 1px, transparent 1px); background-size: 15px 15px;"></div>
+                                    
+                                    <div class="grid grid-cols-3 gap-2 text-center text-[9px] mb-2">
+                                        <div class="bg-slate-900/80 p-1.5 rounded border border-slate-800/40">
+                                            <p class="text-slate-400">الربح اليومي للذهب</p>
+                                            <p class="text-emerald-400 font-bold tech-font text-xs">+$640.00</p>
+                                        </div>
+                                        <div class="bg-slate-900/80 p-1.5 rounded border border-slate-800/40">
+                                            <p class="text-slate-400">عقود التداول اليومية</p>
+                                            <p class="text-yellow-500 font-bold tech-font text-xs">3.50 Lots</p>
+                                        </div>
+                                        <div class="bg-slate-900/80 p-1.5 rounded border border-slate-800/40">
+                                            <p class="text-slate-400">حالة الاتصال بـ MT5</p>
+                                            <p class="text-emerald-400 font-bold tech-font text-xs">مستقر 100%</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Chart lines simulator -->
+                                    <div class="flex-1 flex items-end gap-1 h-20 border-b border-slate-800 pb-1 relative">
+                                        <div class="flex-1 flex flex-col justify-end items-center h-full"><div class="w-2 bg-emerald-500 rounded-t h-[40%] animate-pulse"></div></div>
+                                        <div class="flex-1 flex flex-col justify-end items-center h-full"><div class="w-2 bg-emerald-500 rounded-t h-[65%] animate-pulse"></div></div>
+                                        <div class="flex-1 flex flex-col justify-end items-center h-full"><div class="w-2 bg-red-500 rounded-t h-[30%] animate-pulse"></div></div>
+                                        <div class="flex-1 flex flex-col justify-end items-center h-full"><div class="w-2 bg-emerald-500 rounded-t h-[80%] animate-pulse"></div></div>
+                                        <div class="flex-1 flex flex-col justify-end items-center h-full"><div class="w-2 bg-emerald-500 rounded-t h-[95%] animate-pulse"></div></div>
+                                        <div class="flex-1 flex flex-col justify-end items-center h-full"><div class="w-2 bg-yellow-500 rounded-t h-[70%] animate-pulse"></div></div>
+                                        
+                                        <div class="absolute right-3 top-2 text-[8px] bg-yellow-600 text-black font-extrabold px-1.5 py-0.5 rounded tech-font animate-bounce">BUY XAU/USD</div>
+                                    </div>
+                                </div>
+
+                                <div class="flex justify-between items-center text-[9px] text-slate-400 z-10">
+                                    <span class="flex items-center gap-1 text-emerald-400">
+                                        <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                                        مقترن بحساب ميتاتريدر 5 (MT5) بأمان
+                                    </span>
+                                    <button onclick="resetSimulator()" class="px-2 py-0.5 bg-slate-900 hover:bg-slate-800 text-white border border-slate-800 rounded">إعادة التشغيل</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item details popups -->
+                        <div id="item-info-overlay" class="absolute bottom-6 left-6 right-6 bg-slate-950/95 border border-slate-800 rounded-xl p-4 shadow-xl text-xs z-40 hidden transform translate-y-4 opacity-0 transition-all duration-300">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h4 id="overlay-title" class="font-bold text-white mb-1">اسم القطعة</h4>
+                                    <p id="overlay-desc" class="text-slate-400 leading-relaxed"></p>
+                                </div>
+                                <button onclick="hideOverlay()" class="text-slate-500 hover:text-white ml-2">✕</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section / قسم مميزات المنتج الفنية والتنافسية -->
+    <section id="features" class="py-20 px-4 bg-[#08090c] border-b border-slate-900">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-yellow-500 font-bold text-xs tracking-wider tech-font">GOLD SCALPING SYSTEM</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-white mt-2">لماذا روبوت الذهب بالذكاء الاصطناعي الخاص بنا؟</h2>
+                <p class="text-slate-400 text-sm mt-3">لقد قمنا بدمج العتاد القوي والبرمجة فائقة الذكاء لتوفير أفضل تجربة تداول مادي آمنة كلياً متوافقة مع حسابات MT5 لتداول الذهب.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-slate-900/40 border border-slate-800/80 rounded-2xl p-6 hover:border-yellow-500/30 transition duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-yellow-600/10 border border-yellow-500/20 flex items-center justify-center text-yellow-500 mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-3">ربط مباشر وآمن بحساب MT5</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        يقترن الروبوت مباشرة بحساب MetaTrader 5 الخاص بك، دون أي تعقيدات برمجية، ليقوم بتنفيذ الصفقات الفورية بحماية كاملة وإدارة صارمة للمخاطر.
+                    </p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="bg-slate-900/40 border border-slate-800/80 rounded-2xl p-6 hover:border-yellow-500/30 transition duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-600/10 border border-emerald-500/20 flex items-center justify-center text-emerald-500 mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-3">فريم 5 دقائق مخصص للذهب</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        برمجة مخصصة تم اختيارها واختبارها عبر باك تيست عميق، صممت خصيصاً لاقتناص فرص السكالبينج السريعة لزوج XAU/USD على فريم الـ 5 دقائق.
+                    </p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="bg-slate-900/40 border border-slate-800/80 rounded-2xl p-6 hover:border-yellow-500/30 transition duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-amber-600/10 border border-amber-500/20 flex items-center justify-center text-amber-500 mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-3">سهولة الاستخدام والتشغيل الآلي</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        لا حاجة لخبرة عميقة بأسواق الذهب المتقلبة. يقوم الروبوت بتحليل الشموع، إدارة لوت التداول وحجم الصفقات بالكامل لتأمين حسابك.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Performance Console Section / قسم لوحة تداولات الذهب النشطة الآن -->
+    <section id="performance" class="py-20 px-4 bg-slate-950/40 border-b border-slate-900">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Performance info description -->
+                <div class="lg:col-span-5 text-right">
+                    <span class="text-yellow-500 font-bold text-xs tracking-wider tech-font">LIVE OPERATIONS ON GOLD</span>
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-white mt-2">راقب صفقات الذهب الحية على حساب MT5</h2>
+                    <p class="text-slate-400 text-sm mt-4 leading-relaxed">
+                        مزامنة لحظية كاملة مع منصة ميتاتريدر 5 (MT5). نقتنص الفرص على زوج الذهب (XAU/USD) على فريم الـ 5 دقائق مع إدارة صارمة للأرباح وحجم الصفقات الذي يتجاوز 200$ لكل صفقة ناجحة.
+                    </p>
+                    <div class="mt-8 space-y-4">
+                        <div class="flex items-center gap-3 bg-slate-900/50 p-3 rounded-xl border border-slate-800/40">
+                            <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                            <span class="text-xs text-slate-300">معدل العائد التراكمي السنوي: <strong class="text-emerald-400 tech-font font-black text-sm">+524.8% سنوياً</strong></span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-slate-900/50 p-3 rounded-xl border border-slate-800/40">
+                            <span class="w-2.5 h-2.5 rounded-full bg-yellow-500"></span>
+                            <span class="text-xs text-slate-300">أزواج التداول النشطة: <strong class="text-white">الذهب XAU/USD (فريم 5 دقائق)</strong></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Realistic Interactive Live Console Simulator / محاكي شاشة صفقات الذهب الحية -->
+                <div class="lg:col-span-7">
+                    <div class="bg-slate-950 border border-slate-800 rounded-2xl p-5 shadow-2xl overflow-hidden relative">
+                        <div class="absolute inset-0 bg-yellow-500/5 pointer-events-none"></div>
+                        
+                        <div class="flex justify-between items-center border-b border-slate-900 pb-3 mb-4">
+                            <div class="flex items-center gap-2">
+                                <span class="w-3 h-3 rounded-full bg-red-500"></span>
+                                <span class="w-3 h-3 rounded-full bg-yellow-500"></span>
+                                <span class="w-3 h-3 rounded-full bg-green-500"></span>
+                            </div>
+                            <span class="text-xs text-slate-400 font-bold tech-font">AI-GOLD-METATRADER-5 v2.1</span>
+                        </div>
+
+                        <!-- Real-time Live Trades List for GOLD (XAU/USD) with high values > $200 -->
+                        <div class="space-y-3">
+                            <!-- Trade 1 -->
+                            <div class="bg-slate-900/60 p-3 rounded-xl border border-slate-800/60 flex justify-between items-center">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-lg bg-emerald-500/10 flex items-center justify-center text-emerald-400 font-bold text-xs tech-font">BUY</div>
+                                    <div>
+                                        <p class="text-xs font-bold text-white tech-font">XAU / USD (الذهب)</p>
+                                        <p class="text-[9px] text-slate-500">منذ ثانيتين | فريم 5 دقائق على MT5</p>
+                                    </div>
+                                </div>
+                                <div class="text-right">
+                                    <p class="text-xs font-bold text-emerald-400 tech-font">+$384.50</p>
+                                    <p class="text-[9px] text-slate-400">حجم العقد: 1.00 Lot (نقطة الدخول: 2320.50)</p>
+                                </div>
+                            </div>
+
+                            <!-- Trade 2 -->
+                            <div class="bg-slate-900/60 p-3 rounded-xl border border-slate-800/60 flex justify-between items-center">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-lg bg-emerald-500/10 flex items-center justify-center text-emerald-400 font-bold text-xs tech-font">BUY</div>
+                                    <div>
+                                        <p class="text-xs font-bold text-white tech-font">XAU / USD (الذهب)</p>
+                                        <p class="text-[9px] text-slate-500">منذ دقيقة | فريم 5 دقائق على MT5</p>
+                                    </div>
+                                </div>
+                                <div class="text-right">
+                                    <p class="text-xs font-bold text-emerald-400 tech-font">+$245.10</p>
+                                    <p class="text-[9px] text-slate-400">حجم العقد: 0.80 Lot (نقطة الدخول: 2318.20)</p>
+                                </div>
+                            </div>
+
+                            <!-- Trade 3 -->
+                            <div class="bg-slate-900/60 p-3 rounded-xl border border-slate-800/60 flex justify-between items-center">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-lg bg-emerald-500/10 flex items-center justify-center text-emerald-400 font-bold text-xs tech-font">SELL</div>
+                                    <div>
+                                        <p class="text-xs font-bold text-white tech-font">XAU / USD (الذهب)</p>
+                                        <p class="text-[9px] text-slate-500">منذ 5 دقائق | فريم 5 دقائق على MT5</p>
+                                    </div>
+                                </div>
+                                <div class="text-right">
+                                    <p class="text-xs font-bold text-emerald-400 tech-font">+$210.30</p>
+                                    <p class="text-[9px] text-slate-400">حجم العقد: 0.50 Lot (نقطة الدخول: 2325.40)</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Real-time Trade ticker simulation bottom -->
+                        <div class="mt-4 pt-4 border-t border-slate-900 flex justify-between items-center text-[10px]">
+                            <span class="text-slate-500">إجمالي الأرباح الحالية للذهب: <strong class="text-white tech-font">$14,840.90</strong></span>
+                            <span class="text-emerald-500 font-bold flex items-center gap-1">
+                                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
+                                متصل ونشط بحساب MT5 الخاص بك
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Specs Section / قسم المواصفات الفنية العميقة للقطع واللوحة الأم -->
+    <section id="specs" class="py-20 px-4 bg-[#08090c] border-b border-slate-900">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-yellow-500 font-bold text-xs tracking-wider tech-font">HARDWARE BLUEPRINT</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-white mt-2">المواصفات الفنية والعتاد للروبوت</h2>
+                <p class="text-slate-400 text-sm mt-3">تفاصيل المعالجة الداخلية والقطع الملموسة المكونة للروبوت v2.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
+                <!-- Specs Table Left -->
+                <div class="bg-slate-900/30 border border-slate-800/80 rounded-2xl p-6 md:p-8 flex flex-col justify-between">
+                    <h3 class="text-xl font-bold text-white mb-6">جدول عتاد النظام والمواصفات</h3>
+                    <div class="space-y-4 text-xs">
+                        <div class="flex justify-between py-3 border-b border-slate-800">
+                            <span class="text-slate-400">معالج الذكاء الاصطناعي مخصص للذهب:</span>
+                            <span class="text-white font-bold tech-font">Hexa-Core Gold Processor v2</span>
+                        </div>
+                        <div class="flex justify-between py-3 border-b border-slate-800">
+                            <span class="text-slate-400">نظام التشغيل والاقتران بـ MT5:</span>
+                            <span class="text-white font-bold tech-font">MT5-Bridge OS v1.9</span>
+                        </div>
+                        <div class="flex justify-between py-3 border-b border-slate-800">
+                            <span class="text-slate-400">واجهات التوصيل والمزامنة:</span>
+                            <span class="text-white font-bold tech-font">USB-C Plug & Play Connection</span>
+                        </div>
+                        <div class="flex justify-between py-3 border-b border-slate-800">
+                            <span class="text-slate-400">استهلاك الطاقة والجهد الكهربائي:</span>
+                            <span class="text-white font-bold tech-font">Ultra-low 5V / 1.5A Input</span>
+                        </div>
+                        <div class="flex justify-between py-3 border-b border-slate-800">
+                            <span class="text-slate-400">توافق حسابات ميتاتريدر:</span>
+                            <span class="text-white font-bold">يدعم جميع شركات الوساطة (Brokers) المقترنة بـ MT5</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Specs Graphic Illustration Right -->
+                <div class="bg-slate-900/30 border border-slate-800/80 rounded-2xl p-6 flex flex-col justify-center items-center relative overflow-hidden">
+                    <div class="absolute inset-0 bg-yellow-500/5"></div>
+                    <!-- Circuit lines -->
+                    <svg class="w-full max-w-md h-64 text-slate-800" viewBox="0 0 400 200" fill="none">
+                        <rect x="50" y="20" width="300" height="160" rx="8" fill="#1e1b4b" stroke="#eab308" stroke-width="3"/>
+                        <path d="M100 50 L200 50 L200 100 M100 150 L300 150 M300 50 L300 100" stroke="#ca8a04" stroke-width="2"/>
+                        <rect x="175" y="75" width="50" height="50" rx="4" fill="#020617" stroke="#eab308" stroke-width="3" class="animate-pulse"/>
+                        <text x="182" y="105" fill="#eab308" font-size="14" font-family="'Orbitron', sans-serif" font-weight="extrabold">XAU</text>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admin Panel Control Section / لوحة التحكم والمراقبة الإدارية السرية -->
+    <section id="admin-section" class="py-16 px-4 bg-slate-950/90 border-t border-red-900/20">
+        <div class="max-w-6xl mx-auto">
+            <div class="bg-slate-900 border border-red-900/30 rounded-3xl p-6 md:p-10 shadow-2xl relative">
+                <div class="absolute top-4 left-4 flex items-center gap-2">
+                    <span class="w-2.5 h-2.5 rounded-full bg-red-500 animate-ping"></span>
+                    <span class="text-[10px] text-red-500 font-extrabold tracking-widest tech-font">ADMIN PANEL SECURE</span>
+                </div>
+                
+                <h2 class="text-2xl font-black text-white mb-3">لوحة تحكم إدارية خاصة بالمالك ⚙️</h2>
+                <p class="text-slate-400 text-xs mb-8">خاصة بمالك الموقع فقط لمراقبة المبيعات، الطلبات الواردة، وتعديل حسابات ومحافظ استقبال الدفع مباشرة.</p>
+
+                <!-- Admin Password Guard -->
+                <div id="admin-login-area" class="space-y-4 max-w-sm">
+                    <div>
+                        <label class="block text-xs font-bold text-slate-400 mb-2">أدخل رمز الدخول السري للإدارة</label>
+                        <div class="flex gap-2">
+                            <input type="password" id="admin-pass" placeholder="أدخل كلمة المرور (الافتراضي: admin123)" class="flex-1 bg-slate-950 border border-slate-800 rounded-xl px-4 py-2.5 text-xs text-white focus:outline-none focus:border-red-500">
+                            <button onclick="checkAdminPassword()" class="px-5 py-2.5 bg-red-600 hover:bg-red-500 text-white text-xs font-bold rounded-xl transition">دخول</button>
+                        </div>
+                    </div>
+                    <p id="admin-login-error" class="text-red-500 text-[10px] hidden">رمز المرور خاطئ! يرجى المحاولة مجدداً.</p>
+                </div>
+
+                <!-- Admin Panel Dashboard Content (مخفي حتى تسجيل الدخول) -->
+                <div id="admin-main-dashboard" class="hidden space-y-8">
+                    
+                    <!-- Admin Top Cards Stats -->
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                        <div class="bg-slate-950 p-4 rounded-xl border border-slate-800/80">
+                            <p class="text-[10px] text-slate-500">إجمالي الطلبات الواردة</p>
+                            <p id="stat-total-orders" class="text-2xl font-black text-white tech-font">3</p>
+                        </div>
+                        <div class="bg-[#0e2118] p-4 rounded-xl border border-emerald-900/30">
+                            <p class="text-[10px] text-emerald-400">إجمالي مبالغ الديبوزت المحصلة</p>
+                            <p id="stat-total-deposits" class="text-2xl font-black text-emerald-400 tech-font">$300.00</p>
+                        </div>
+                        <div class="bg-slate-950 p-4 rounded-xl border border-slate-800/80">
+                            <p class="text-[10px] text-slate-500">طرق الدفع المفضلة للعملاء</p>
+                            <p class="text-xs text-slate-300 mt-1">بايننس USDT TRC-20 & بطاقات ائتمانية</p>
+                        </div>
+                    </div>
+
+                    <!-- Part 1: Edit Wallet Addresses (تعديل حسابات الاستلام) -->
+                    <div class="bg-slate-950 rounded-2xl p-6 border border-slate-800">
+                        <h3 class="text-sm font-bold text-yellow-500 border-b border-slate-900 pb-2 mb-4">🔧 تعديل محافظ الاستقبال وبيانات الدفع الخاصة بك</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-right">
+                            <div class="space-y-2">
+                                <label class="block text-xs font-bold text-slate-400">عنوان محفظتك USDT TRC-20 (لاستقبال دفع بايننس)</label>
+                                <input type="text" id="admin-crypto-wallet" value="TYc9D7p8yBmxN6G9T11MstqD8b45G6TrC20" class="w-full bg-slate-900 border border-slate-800 rounded-xl px-3 py-2 text-xs font-mono text-white text-left focus:outline-none focus:border-yellow-500">
+                            </div>
+                            <div class="space-y-2">
+                                <label class="block text-xs font-bold text-slate-400">رقم البطاقة الائتمانية أو الحساب البنكي الافتراضي</label>
+                                <input type="text" id="admin-card-wallet" value="4000 1234 5678 9010" class="w-full bg-slate-900 border border-slate-800 rounded-xl px-3 py-2 text-xs font-mono text-white text-left focus:outline-none focus:border-blue-500">
+                            </div>
+                        </div>
+                        <div class="mt-4 flex justify-end">
+                            <button onclick="saveAdminSettings()" class="px-6 py-2 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold rounded-xl transition">حفظ التغييرات المالية الحالية ✅</button>
+                        </div>
+                    </div>
+
+                    <!-- Part 2: Registrations and Submissions Table (جدول الطلبات) -->
+                    <div class="bg-slate-950 rounded-2xl p-6 border border-slate-800 overflow-hidden">
+                        <h3 class="text-sm font-bold text-blue-400 border-b border-slate-900 pb-2 mb-4">👥 قائمة العملاء الذين سجلوا وقاموا بدفع الديبوزت</h3>
+                        
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-right text-xs">
+                                <thead>
+                                    <tr class="border-b border-slate-800 text-slate-500">
+                                        <th class="py-3 px-2">الاسم</th>
+                                        <th class="py-3 px-2">الجوال</th>
+                                        <th class="py-3 px-2">البريد الإلكتروني</th>
+                                        <th class="py-3 px-2">العنوان</th>
+                                        <th class="py-3 px-2">طريقة الدفع</th>
+                                        <th class="py-3 px-2">البيانات / المعاملة (TxID)</th>
+                                        <th class="py-3 px-2 text-center">الإجراءات</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="admin-orders-table-body" class="divide-y divide-slate-900 text-slate-300">
+                                    <!-- سيتم تعبئة البيانات برمجياً عبر الجافا سكربت محاكاة لقاعدة البيانات السريعة -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / التذييل والروابط -->
+    <footer class="bg-slate-950 border-t border-slate-900 py-12 px-4 text-center">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center">
+                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path></svg>
+                </div>
+                <div class="text-right">
+                    <h4 class="text-sm font-black text-white leading-tight">AI ROBOT TRADING</h4>
+                    <p class="text-[9px] text-slate-500">تمت ترقية إصدار v2 لضمان الأمان والخصوصية للذهب</p>
+                </div>
+            </div>
+            
+            <p class="text-xs text-slate-500">
+                © 2026 روبوت تداول الذهب بالذكاء الاصطناعي على MT5. كافة الحقوق محفوظة.
+            </p>
+
+            <div class="flex items-center gap-4 text-xs text-slate-400 font-bold">
+                <a href="#unboxing" class="hover:text-blue-500 transition">جرب المحاكي</a>
+                <a href="#specs" class="hover:text-blue-500 transition">القطع الفنية</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script logic for Simulator Interactions & Sounds & Database Sim -->
+    <script>
+        // Web Audio Context for realistic high-tech synthesized sound effect indicators
+        const AudioContext = window.AudioContext || window.webkitAudioContext;
+        let audioCtx = null;
+
+        function initAudio() {
+            if (!audioCtx) {
+                audioCtx = new AudioContext();
+            }
+        }
+
+        // Low click synthesized sound
+        function playBeep(freq = 600, duration = 0.08, type = 'sine') {
+            try {
+                initAudio();
+                if (!audioCtx) return;
+                let osc = audioCtx.createOscillator();
+                let gain = audioCtx.createGain();
+                osc.connect(gain);
+                gain.connect(audioCtx.destination);
+                osc.type = type;
+                osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
+                gain.gain.setValueAtTime(0.04, audioCtx.currentTime);
+                gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + duration);
+                osc.start();
+                osc.stop(audioCtx.currentTime + duration);
+            } catch (e) {
+                console.log("Audio contexts blocked or not supported on this device.");
+            }
+        }
+
+        // Awesome futuristic charging activation sound
+        function playActivationSound() {
+            try {
+                initAudio();
+                if (!audioCtx) return;
+                const now = audioCtx.currentTime;
+                
+                // Bass sweep up
+                let osc1 = audioCtx.createOscillator();
+                let gain1 = audioCtx.createGain();
+                osc1.connect(gain1);
+                gain1.connect(audioCtx.destination);
+                osc1.frequency.setValueAtTime(120, now);
+                osc1.frequency.exponentialRampToValueAtTime(880, now + 1.2);
+                gain1.gain.setValueAtTime(0.06, now);
+                gain1.gain.exponentialRampToValueAtTime(0.001, now + 1.2);
+                osc1.start();
+                osc1.stop(now + 1.2);
+
+                // Sparkling high bell sound
+                setTimeout(() => {
+                    playBeep(1200, 0.25, 'triangle');
+                    playBeep(1600, 0.35, 'sine');
+                }, 850);
+            } catch (e) { }
+        }
+
+        // Terminal console logging system
+        function addTerminalLog(message, isAlert = false) {
+            const container = document.getElementById('terminal-logs');
+            if(!container) return;
+            const newLog = document.createElement('p');
+            newLog.className = isAlert ? 'text-blue-400 font-bold' : 'text-emerald-400';
+            const now = new Date();
+            const timeStr = `${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}:${String(now.getSeconds()).padStart(2, '0')}`;
+            newLog.innerText = `[${timeStr}] ${message}`;
+            container.appendChild(newLog);
+            container.scrollTop = container.scrollHeight;
+        }
+
+        // Simulator state management
+        let simulatorStep = 1; // 1: Closed box, 2: Open tray, 3: Cable connected/Running
+        const items = {
+            robot: {
+                title: "روبوت تداول الذهب v2",
+                desc: "تصميم رمادي معدني ممتاز يحاكي تفاصيل الروبوت الموضحة في مقطع الفيديو المرفق. يتم برمجته وتفعيله كلياً بمجرد تزويده بالطاقة ومزامنته بـ حساب MT5 الخاص بك لتداول الذهب فريم 5 دقائق."
+            },
+            cable: {
+                title: "كابل الطاقة الفوري المخصص",
+                desc: "كابل شحن ونقل بيانات مخصص يتم ربطه باللوحة المعالجة v2 لتوفير اتصال متين ومنظم بالكامل بين الروبوت ووحدة الطاقة."
+            },
+            board: {
+                title: "لوحة معالجة صفقات الذهب الفورية v2",
+                desc: "بوردة إلكترونية ذكية تحمل شريحة تشفير الأوامر (v2 Mainboard) ومحرك التحليل التقني لفريم 5 دقائق على الذهب لضمان سرعة تداول مذهلة."
+            }
+        };
+
+        // Trigger step 1: open the product box lid
+        function triggerOpenBox() {
+            if (simulatorStep !== 1) return;
+            playBeep(450, 0.2);
+            
+            addTerminalLog("بدء فتح الغطاء لعلبة روبوت التداول...");
+            
+            const lid = document.getElementById('box-lid');
+            lid.classList.add('box-lid-open');
+
+            setTimeout(() => {
+                const tray = document.getElementById('box-tray');
+                tray.classList.remove('opacity-0', 'scale-95');
+                tray.classList.add('opacity-100', 'scale-100', 'tray-unveil');
+                
+                // Update Timeline sidebar
+                document.getElementById('step-1-indicator').classList.add('opacity-40');
+                document.getElementById('step-1-indicator').classList.remove('border-blue-600');
+                document.getElementById('btn-open-box').classList.add('hidden');
+                
+                document.getElementById('step-2-indicator').classList.remove('opacity-40');
+                document.getElementById('step-2-indicator').classList.add('border-blue-600');
+                document.getElementById('step-2-num').classList.add('bg-blue-600', 'text-white');
+                document.getElementById('step-2-num').classList.remove('bg-slate-800', 'text-slate-400');
+                
+                document.getElementById('exploration-buttons').classList.remove('hidden');
+                document.getElementById('btn-power-on').classList.remove('hidden');
+
+                addTerminalLog("تم إزالة الغطاء. تظهر القطع الداخلية واللوحة الأم بوضوح الآن.", true);
+                simulatorStep = 2;
+                playBeep(800, 0.15);
+            }, 800);
+        }
+
+        // Item details overlay when clicking on components inside tray
+        function showItemDetails(itemKey) {
+            if (simulatorStep < 2) return;
+            playBeep(700, 0.05);
+            
+            const overlay = document.getElementById('item-info-overlay');
+            const title = document.getElementById('overlay-title');
+            const desc = document.getElementById('overlay-desc');
+            
+            title.innerText = items[itemKey].title;
+            desc.innerText = items[itemKey].desc;
+            
+            overlay.classList.remove('hidden');
+            setTimeout(() => {
+                overlay.classList.remove('translate-y-4', 'opacity-0');
+            }, 50);
+
+            addTerminalLog(`تمت معاينة مكون: ${items[itemKey].title}`);
+        }
+
+        function hideOverlay() {
+            const overlay = document.getElementById('item-info-overlay');
+            overlay.classList.add('translate-y-4', 'opacity-0');
+            setTimeout(() => {
+                overlay.classList.add('hidden');
+            }, 300);
+        }
+
+        // Highlight element effects from side buttons
+        function highlightElement(itemKey) {
+            showItemDetails(itemKey);
+            let targetId = "slot-" + itemKey;
+            let el = document.getElementById(targetId);
+            el.classList.add('border-blue-500', 'scale-105');
+            setTimeout(() => {
+                el.classList.remove('border-blue-500', 'scale-105');
+            }, 1000);
+        }
+
+        // Step 2 & 3: connect power & activate the systems
+        function triggerConnectCable() {
+            if (simulatorStep !== 2) return;
+            playBeep(550, 0.1);
+            addTerminalLog("توصيل كابل الشحن والمزامنة بمنفذ الرأس...");
+            
+            const cableConn = document.getElementById('cable-connection');
+            cableConn.classList.remove('hidden');
+
+            setTimeout(() => {
+                // Glow Robot LEDs to Gold/Amber
+                document.getElementById('eye-left').setAttribute('fill', '#fbbf24');
+                document.getElementById('eye-right').setAttribute('fill', '#fbbf24');
+                document.getElementById('chest-led').setAttribute('fill', '#fbbf24');
+                
+                document.getElementById('robot-svg').classList.add('active-glow');
+                document.getElementById('robot-status-dot').className = "w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse";
+                document.getElementById('robot-status-text').innerText = "متصل بـ MT5";
+                document.getElementById('robot-status-text').className = "text-emerald-400 font-extrabold";
+
+                addTerminalLog("تم إمداد الطاقة والمزامنة باللوحة والاقتران بـ MT5 بنجاح!", true);
+                playActivationSound();
+                
+                // Show live dashboard trades transition
+                setTimeout(() => {
+                    addTerminalLog("تحميل وتنشيط واجهة تداول الذهب على فريم 5 دقائق...");
+                    document.getElementById('box-tray').classList.add('opacity-0', 'scale-95');
+                    
+                    setTimeout(() => {
+                        const db = document.getElementById('trading-dashboard');
+                        db.classList.remove('opacity-0', 'pointer-events-none');
+                        db.classList.add('opacity-100');
+                        
+                        // Step 3 timeline update
+                        document.getElementById('step-2-indicator').classList.add('opacity-40');
+                        document.getElementById('step-2-indicator').classList.remove('border-blue-600');
+                        document.getElementById('btn-power-on').classList.add('hidden');
+                        document.getElementById('exploration-buttons').classList.add('hidden');
+
+                        document.getElementById('step-3-indicator').classList.remove('opacity-40');
+                        document.getElementById('step-3-indicator').classList.add('border-blue-600');
+                        document.getElementById('step-3-num').classList.add('bg-blue-600', 'text-white');
+                        document.getElementById('step-3-num').classList.remove('bg-slate-800', 'text-slate-400');
+
+                        addTerminalLog("أهلاً بك! نظام تداول الذهب على MT5 يعمل الآن وبدأ باقتناص الصفقات بنجاح.", true);
+                        simulatorStep = 3;
+                    }, 500);
+
+                }, 1500);
+
+            }, 1000);
+        }
+
+        // Reset Simulator to step 1
+        function resetSimulator() {
+            playBeep(300, 0.15);
+            simulatorStep = 1;
+            
+            hideOverlay();
+
+            document.getElementById('box-lid').classList.remove('box-lid-open');
+            
+            const tray = document.getElementById('box-tray');
+            tray.classList.add('opacity-0', 'scale-95');
+            tray.classList.remove('opacity-100', 'scale-100', 'tray-unveil');
+
+            const db = document.getElementById('trading-dashboard');
+            db.classList.add('opacity-0', 'pointer-events-none');
+            db.classList.remove('opacity-100');
+
+            // Reset Robot graphics
+            document.getElementById('eye-left').setAttribute('fill', '#334155');
+            document.getElementById('eye-right').setAttribute('fill', '#334155');
+            document.getElementById('chest-led').setAttribute('fill', '#334155');
+            document.getElementById('robot-svg').classList.remove('active-glow');
+            document.getElementById('cable-connection').classList.add('hidden');
+            document.getElementById('robot-status-dot').className = "w-1.5 h-1.5 rounded-full bg-slate-500";
+            document.getElementById('robot-status-text').innerText = "غير متصل";
+            document.getElementById('robot-status-text').className = "text-slate-400 font-extrabold";
+
+            // Reset Timeline Sidebar
+            document.getElementById('step-1-indicator').classList.remove('opacity-40');
+            document.getElementById('step-1-indicator').classList.add('border-blue-600');
+            document.getElementById('btn-open-box').classList.remove('hidden');
+
+            document.getElementById('step-2-indicator').classList.add('opacity-40');
+            document.getElementById('step-2-indicator').classList.remove('border-blue-600');
+            document.getElementById('step-2-num').className = "w-6 h-6 rounded-full bg-slate-800 text-slate-400 text-xs font-bold flex items-center justify-center shrink-0";
+            document.getElementById('btn-power-on').classList.add('hidden');
+            document.getElementById('exploration-buttons').classList.add('hidden');
+
+            document.getElementById('step-3-indicator').classList.add('opacity-40');
+            document.getElementById('step-3-indicator').classList.remove('border-blue-600');
+            document.getElementById('step-3-num').className = "w-6 h-6 rounded-full bg-slate-800 text-slate-400 text-xs font-bold flex items-center justify-center shrink-0";
+
+            const container = document.getElementById('terminal-logs');
+            if(container) {
+                container.innerHTML = `
+                    <p class="text-slate-500">[System] تم إعادة تصفير محاكي فتح علبة المنتج بنجاح.</p>
+                    <p class="text-slate-500">[System] انقر على زر "افتح علبة الروبوت" للبدء من جديد.</p>
+                `;
+            }
+        }
+
+        // ==========================================
+        // Payment & Pre-Order Step-By-Step Logic
+        // ==========================================
+
+        let activePaymentTab = 'card'; // 'card' or 'crypto'
+
+        function handlePreorderSubmit(event) {
+            event.preventDefault();
+            playBeep(700, 0.15, 'triangle');
+
+            // Hide Shipping Info Form and Show Simulated Electronic Payment Form
+            document.getElementById('preorder-form').classList.add('hidden');
+            document.getElementById('payment-gateway-card').classList.remove('hidden');
+            
+            // Prefill card display name with user's name
+            const userName = document.getElementById('cust-name').value;
+            document.getElementById('card-display-name').innerText = userName ? userName.toUpperCase() : "CUSTOMER NAME";
+        }
+
+        // Switch between Card payment and Crypto Binance USDT
+        function switchPaymentTab(tab) {
+            playBeep(500, 0.08);
+            activePaymentTab = tab;
+            
+            const cardBtn = document.getElementById('tab-card-btn');
+            const cryptoBtn = document.getElementById('tab-crypto-btn');
+            const cardPanel = document.getElementById('panel-card');
+            const cryptoPanel = document.getElementById('panel-crypto');
+
+            if (tab === 'card') {
+                cardBtn.className = "py-3 px-4 rounded-xl border-2 border-yellow-500 bg-yellow-950/10 text-white font-bold text-xs flex items-center justify-center gap-2 transition-all";
+                cryptoBtn.className = "py-3 px-4 rounded-xl border border-slate-800 bg-slate-950/40 text-slate-400 font-bold text-xs flex items-center justify-center gap-2 transition-all";
+                cardPanel.classList.remove('hidden');
+                cryptoPanel.classList.add('hidden');
+            } else {
+                cryptoBtn.className = "py-3 px-4 rounded-xl border-2 border-yellow-500 bg-yellow-950/10 text-white font-bold text-xs flex items-center justify-center gap-2 transition-all";
+                cardBtn.className = "py-3 px-4 rounded-xl border border-slate-800 bg-slate-950/40 text-slate-400 font-bold text-xs flex items-center justify-center gap-2 transition-all";
+                cryptoPanel.classList.remove('hidden');
+                cardPanel.classList.add('hidden');
+            }
+        }
+
+        // Copy cryptocurrency wallet address TRC20 to clipboard
+        function copyCryptoAddress() {
+            const copyText = document.getElementById("crypto-address-input");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); // For mobile devices
+            document.execCommand("copy");
+            
+            playBeep(880, 0.15);
+            const confirmLabel = document.getElementById('copy-confirm-text');
+            confirmLabel.innerText = "✓ تم النسخ بنجاح! الصق العنوان في محفظتك لإرسال الديبوزت.";
+            confirmLabel.className = "text-emerald-400 text-[9px] font-bold";
+            
+            setTimeout(() => {
+                confirmLabel.innerText = "انقر فوق زر النسخ لنسخ العنوان فوراً.";
+                confirmLabel.className = "text-slate-500 text-[9px]";
+            }, 3000);
+        }
+
+        // Go Back to Shipping form if customer wants to edit address
+        function goBackToShipping() {
+            playBeep(500, 0.1);
+            document.getElementById('payment-gateway-card').classList.add('hidden');
+            document.getElementById('preorder-form').classList.remove('hidden');
+        }
+
+        // Live format Credit Card inputs for better UX
+        function formatCardNumber(input) {
+            let value = input.value.replace(/\D/g, '');
+            let formattedValue = '';
+            for (let i = 0; i < value.length; i++) {
+                if (i > 0 && i % 4 === 0) {
+                    formattedValue += ' ';
+                }
+                formattedValue += value[i];
+            }
+            input.value = formattedValue;
+        }
+
+        function formatExpiry(input) {
+            let value = input.value.replace(/\D/g, '');
+            if (value.length > 2) {
+                input.value = value.slice(0, 2) + '/' + value.slice(2, 4);
+            } else {
+                input.value = value;
+            }
+        }
+
+        // Update visual design of credit card live during typing
+        function updateCardDisplay() {
+            const num = document.getElementById('card-number').value;
+            const name = document.getElementById('card-name').value;
+            const expiry = document.getElementById('card-expiry').value;
+
+            document.getElementById('card-display-num').innerText = num ? num : "•••• •••• •••• ••••";
+            document.getElementById('card-display-name').innerText = name ? name.toUpperCase() : document.getElementById('cust-name').value.toUpperCase();
+            document.getElementById('card-display-expiry').innerText = expiry ? expiry : "MM/YY";
+        }
+
+        // Database/Order Logs simulated in-memory array
+        let ordersDatabase = [
+            {
+                id: 1,
+                name: "خالد العتيبي",
+                phone: "+966 54 883 2948",
+                email: "khaled@domain.com",
+                address: "الرياض، حي الياسمين، شارع العليا",
+                method: "Credit Card",
+                trxDetails: "VISA *4920",
+                date: "2026-05-24 18:34"
+            },
+            {
+                id: 2,
+                name: "عمر الهاشمي",
+                phone: "+971 50 123 4567",
+                email: "omar.h@gmail.com",
+                address: "دبي، مرسى دبي، برج المارينا",
+                method: "Binance TRC20",
+                trxDetails: "TxID: d4728ab937cf1...",
+                date: "2026-05-25 02:15"
+            }
+        ];
+
+        // Handle secure deposit $100 submission simulation
+        function handlePaymentSubmit(event, paymentMethod) {
+            event.preventDefault();
+            playBeep(600, 0.2, 'sawtooth');
+
+            // Captured shipping info
+            const name = document.getElementById('cust-name').value;
+            const phone = document.getElementById('cust-phone').value;
+            const email = document.getElementById('cust-email').value;
+            const address = document.getElementById('cust-address').value;
+            
+            // Captured proof details
+            let proof = "";
+            if (paymentMethod === "Credit Card") {
+                const cardNum = document.getElementById('card-number').value;
+                proof = "Card: •••• " + cardNum.slice(-4);
+            } else {
+                proof = "TxID: " + document.getElementById('crypto-txid').value.slice(0, 15) + "...";
+            }
+
+            // Switch to loading animation (simulating real merchant verification)
+            document.getElementById('payment-gateway-card').classList.add('hidden');
+            document.getElementById('payment-processing-loader').classList.remove('hidden');
+
+            setTimeout(() => {
+                // Successful payment sound & visual update
+                playActivationSound();
+                document.getElementById('payment-processing-loader').classList.add('hidden');
+                document.getElementById('order-success-card').classList.remove('hidden');
+
+                // Bind custom name and method in success feedback card
+                document.getElementById('success-display-name').innerText = name;
+                document.getElementById('success-display-method').innerText = paymentMethod;
+
+                // Push new order dynamically to Database array
+                const newOrder = {
+                    id: ordersDatabase.length + 1,
+                    name: name,
+                    phone: phone,
+                    email: email,
+                    address: address,
+                    method: paymentMethod,
+                    trxDetails: proof,
+                    date: new Date().toISOString().replace('T', ' ').slice(0, 16)
+                };
+                ordersDatabase.unshift(newOrder); // Add to beginning of admin list
+                
+                // Refresh admin table view
+                renderAdminOrders();
+            }, 3000); // 3 seconds mock gateway transaction delay
+        }
+
+        function resetPreorderForm() {
+            playBeep(450, 0.1);
+            
+            // Reset forms
+            document.getElementById('preorder-form').reset();
+            document.getElementById('payment-form').reset();
+            document.getElementById('crypto-payment-form').reset();
+            
+            // Reset displays
+            document.getElementById('card-display-num').innerText = "•••• •••• •••• ••••";
+            document.getElementById('card-display-name').innerText = "CUSTOMER NAME";
+            document.getElementById('card-display-expiry').innerText = "MM/YY";
+
+            // Reset visibility
+            document.getElementById('order-success-card').classList.add('hidden');
+            document.getElementById('payment-gateway-card').classList.add('hidden');
+            document.getElementById('payment-processing-loader').classList.add('hidden');
+            document.getElementById('preorder-form').classList.remove('hidden');
+        }
+
+        // ==========================================
+        // Admin Panel Secure Password Logic
+        // ==========================================
+
+        let isAdminLoggedIn = false;
+
+        function checkAdminPassword() {
+            const pass = document.getElementById('admin-pass').value;
+            
+            // Simple robust mock check (Default secret password: admin123)
+            if (pass === "admin123") {
+                playActivationSound();
+                isAdminLoggedIn = true;
+                document.getElementById('admin-login-area').classList.add('hidden');
+                document.getElementById('admin-main-dashboard').classList.remove('hidden');
+                renderAdminOrders();
+            } else {
+                playBeep(200, 0.4, 'sawtooth');
+                const errorLabel = document.getElementById('admin-login-error');
+                errorLabel.classList.remove('hidden');
+                setTimeout(() => {
+                    errorLabel.classList.add('hidden');
+                }, 4000);
+            }
+        }
+
+        // Save customized payment settings from panel
+        function saveAdminSettings() {
+            playBeep(900, 0.15, 'triangle');
+            const customCrypto = document.getElementById('admin-crypto-wallet').value;
+            const customCard = document.getElementById('admin-card-wallet').value;
+            
+            // Dynamically inject custom wallet onto customer checkout screen
+            document.getElementById('crypto-address-input').value = customCrypto;
+            document.getElementById('card-number').placeholder = customCard;
+            
+            alert("تم حفظ وتحديث عناوين استقبال الأموال ومحافظ الديبوزت بنجاح في الموقع!");
+        }
+
+        // Render administrative registration table
+        function renderAdminOrders() {
+            const tableBody = document.getElementById('admin-orders-table-body');
+            if(!tableBody) return;
+            
+            tableBody.innerHTML = "";
+
+            ordersDatabase.forEach(order => {
+                const tr = document.createElement('tr');
+                tr.className = "border-b border-slate-900 hover:bg-slate-800/30 transition";
+                tr.innerHTML = `
+                    <td class="py-3 px-2 font-bold text-white">${order.name}</td>
+                    <td class="py-3 px-2 font-mono">${order.phone}</td>
+                    <td class="py-3 px-2">${order.email}</td>
+                    <td class="py-3 px-2 max-w-xs truncate" title="${order.address}">${order.address}</td>
+                    <td class="py-3 px-2">
+                        <span class="px-2 py-0.5 rounded text-[10px] font-bold ${order.method.includes('Binance') ? 'bg-yellow-500/10 text-yellow-400' : 'bg-blue-500/10 text-blue-400'}">
+                            ${order.method}
+                        </span>
+                    </td>
+                    <td class="py-3 px-2 font-mono text-[10px] text-slate-400">${order.trxDetails}</td>
+                    <td class="py-3 px-2 text-center">
+                        <button onclick="deleteAdminOrder(${order.id})" class="px-2.5 py-1 bg-red-600/15 hover:bg-red-600/30 text-red-400 rounded transition text-[10px]">حذف</button>
+                    </td>
+                `;
+                tableBody.appendChild(tr);
+            });
+
+            // Update stats
+            document.getElementById('stat-total-orders').innerText = ordersDatabase.length;
+            document.getElementById('stat-total-deposits').innerText = `$${ordersDatabase.length * 100}.00`;
+        }
+
+        // Action to delete order log from table list
+        function deleteAdminOrder(orderId) {
+            playBeep(300, 0.2, 'sawtooth');
+            ordersDatabase = ordersDatabase.filter(o => o.id !== orderId);
+            renderAdminOrders();
+        }
+    </script>
+</body>
+</html>
